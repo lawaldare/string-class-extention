@@ -40,6 +40,13 @@ require('./StringClassSolution');
    test('A simple sentence case ', () => {
        expect('am in love with you'.ucFirst()).toEqual('Am in love with you');
    })
+   test('A simple sentence case', () => {
+       expect('am in love with you'.words()).toEqual([ 'am', 'in', 'love', 'with', 'you' ]);
+   })
+   test('A case with just a word string', () => {
+       expect('love'.words()).toEqual([ 'love' ]);
+   })
+
 
 
 
