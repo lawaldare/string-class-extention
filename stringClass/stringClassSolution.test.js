@@ -94,6 +94,18 @@ require('./StringClassSolution');
    test('A case of a more complex string', () => {
        expect('adr2'.isDigit()).toEqual(false);
    })
+   test('A case of a simple string', () => {
+       expect('2000'.toCurrency()).toEqual('2,000.00');
+   })
+   test('A case of a longer string', () => {
+       expect('123456789'.toCurrency()).toEqual('123,456,789.00');
+   })
+   test('A case of a string with float value', () => {
+       expect('1234567.894'.toCurrency()).toEqual('1,234,567.89');
+   })
+   test('A case of a string with complex float value', () => {
+       expect('1234567.897'.toCurrency()).toEqual('1,234,567.90');
+   })
 
 
 
