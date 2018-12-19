@@ -106,6 +106,15 @@ require('./StringClassSolution');
    test('A case of a string with complex float value', () => {
        expect('1234567.897'.toCurrency()).toEqual('1,234,567.90');
    })
+   test('A case of a simple string', () => {
+       expect('5,678'.fromCurrency()).toEqual(5678);
+   })
+   test('A case of a longer string', () => {
+       expect('2,657,456'.fromCurrency()).toEqual(2657456);
+   })
+   test('A case of a simple string', () => {
+       expect('56,008.79'.fromCurrency()).toEqual(56008.79);
+   })
 
 
 
