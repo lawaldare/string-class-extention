@@ -85,6 +85,15 @@ require('./StringClassSolution');
    test('A case of repeated numbers', () => {
        expect('2222'.numberWords()).toEqual('two two two two');
    })
+   test('A case of a simple string', () => {
+       expect('2'.isDigit()).toEqual(true);
+   })
+   test('A case of a simple string with more than a digit', () => {
+       expect('2345'.isDigit()).toEqual(false);
+   })
+   test('A case of a more complex string', () => {
+       expect('adr2'.isDigit()).toEqual(false);
+   })
 
 
 
