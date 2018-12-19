@@ -46,6 +46,15 @@ require('./StringClassSolution');
    test('A case with just a word string', () => {
        expect('love'.words()).toEqual([ 'love' ]);
    })
+   test('A simple sentence case', () => {
+       expect('am in love with you'.wordCount()).toEqual(5);
+   })
+   test('A case with just a word', () => {
+       expect('you'.wordCount()).toEqual(1);
+   })
+   test('A case with just a character', () => {
+       expect('y'.wordCount()).toEqual(1);
+   })
 
 
 
