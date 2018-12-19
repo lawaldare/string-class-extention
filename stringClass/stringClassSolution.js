@@ -93,7 +93,7 @@ String.prototype.numberWords = function() {
 };
 
 
-String.prototype.isDigits = function() {
+String.prototype.isDigit = function() {
 	let regex = /^[\d]{1}$/;
     return(regex.test(this)) ? true : false;	
 };
