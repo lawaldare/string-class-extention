@@ -34,6 +34,12 @@ require('./StringClassSolution');
    test('A case sentence where all are lowercase', () => {
        expect('adesewa'.toLower()).toEqual('adesewa');
    })
+   test('A simple case ', () => {
+       expect('hallo'.ucFirst()).toEqual('Hallo');
+   })
+   test('A simple sentence case ', () => {
+       expect('am in love with you'.ucFirst()).toEqual('Am in love with you');
+   })
 
 
 
