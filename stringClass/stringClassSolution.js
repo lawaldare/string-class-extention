@@ -1,11 +1,11 @@
 String.prototype.hasVowels = function() {
-		
-
+	let regex = /[aeiou]/gi;
+    return(regex.test(this)) ? true : false;	
 	};
 
 String.prototype.isQuestion = function() {
-		
-
+	let regex = /\?$/;
+    return(regex.test(this)) ? true : false;	
 	};
 
 String.prototype.toUpper = function() {
