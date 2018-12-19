@@ -25,6 +25,15 @@ require('./StringClassSolution');
    test('A case where uppercase are in between a string', () => {
        expect('nOPe'.toUpper()).toEqual('NOPE');
    })
+   test('A case where uppercase are in between a string', () => {
+       expect('I MIss YOU'.toLower()).toEqual('i miss you');
+   })
+   test('A case sentence where all are uppercase', () => {
+       expect('JOSHUA'.toLower()).toEqual('joshua');
+   })
+   test('A case sentence where all are lowercase', () => {
+       expect('adesewa'.toLower()).toEqual('adesewa');
+   })
 
 
 
