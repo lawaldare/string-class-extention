@@ -67,7 +67,16 @@ require('./StringClassSolution');
    test('A case of a sentence string', () => {
        expect('i am Dare Lawal'.inverseCase()).toEqual('I AM dARE lAWAL');
    })
-   
+   test('A case of a sentence string', () => {
+       expect('i am Dare Lawal'.alternatingCase()).toEqual('i aM DaRe lAwAl');
+   })
+   test('A case of a simple string', () => {
+       expect('Dictionary'.alternatingCase()).toEqual('dIcTiOnArY');
+   })
+   test('A case where they are all uppercase', () => {
+       expect('VEHINCLE'.alternatingCase()).toEqual('vEhInClE');
+   })
+
 
 
 
