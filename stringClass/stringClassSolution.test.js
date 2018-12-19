@@ -76,6 +76,16 @@ require('./StringClassSolution');
    test('A case where they are all uppercase', () => {
        expect('VEHINCLE'.alternatingCase()).toEqual('vEhInClE');
    })
+   test('A case of single number', () => {
+       expect('4'.numberWords()).toEqual('four');
+   })
+   test('A case of more numbers', () => {
+       expect('12345'.numberWords()).toEqual('one two three four five');
+   })
+   test('A case of repeated numbers', () => {
+       expect('2222'.numberWords()).toEqual('two two two two');
+   })
+
 
 
 
