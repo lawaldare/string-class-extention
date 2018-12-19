@@ -55,6 +55,19 @@ require('./StringClassSolution');
    test('A case with just a character', () => {
        expect('y'.wordCount()).toEqual(1);
    })
+   test('A case of a simple string', () => {
+       expect('damIAre'.inverseCase()).toEqual('DAMiaRE');
+   })
+   test('A case where all are uppercase', () => {
+       expect('VEHINCLE'.inverseCase()).toEqual('vehincle');
+   })
+   test('A case where all are lowercase', () => {
+       expect('pastor'.inverseCase()).toEqual('PASTOR');
+   })
+   test('A case of a sentence string', () => {
+       expect('i am Dare Lawal'.inverseCase()).toEqual('I AM dARE lAWAL');
+   })
+   
 
 
 
