@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/20ac0c5209b94cf98d8e821ce54b844d)](https://www.codacy.com/app/joy-warugu/checkpoint-2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andela-jwarugu/checkpoint-2&amp;utm_campaign=Badge_Grade)
+
 
 # String Class
 
@@ -79,5 +79,4 @@ This is an extension of the String Class in JavaScript. The new methods support 
     expect('1,000,000'.fromCurrency()).toEqual(1000000);
     ```
 
-## Motivation
-Checkpoint 2. Clone repo and run it yourself. 
+
