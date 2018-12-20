@@ -78,5 +78,39 @@ This is an extension of the String Class in JavaScript. The new methods support 
     expect('1,000'.fromCurrency()).toEqual(1000);
     expect('1,000,000'.fromCurrency()).toEqual(1000000);
     ```
+* inverseCase (typeof **String**): Returns each letter in the string as an inverse of its current
+case e.g Mr. Ben should return mR. bEN.
 
+    ```JavaScript 
+    expect(typeof 'Dictionary'.inverseCase()).toBe('string');
+    expect('Dictionary'.inverseCase()).toEqual('dICTIONARY');
+    expect('aBCdE'.inverseCase()).toEqual('AbcDe');
+    ```
+
+* alternatingCase (typeof **String**): Returns the letters in alternating cases. It must start with a
+lower case e.g Onomatopoeia should return oNoMaToPoEiA.
+
+    ```JavaScript 
+    expect(typeof 'Dictionary'.alternatingCase()).toBe('string');
+    expect('Dictionary'.alternatingCase()).toEqual('dIcTiOnArY');
+    expect('aBCdE'.alternatingCase()).toEqual('aBcDe');
+    ```
+
+* numberWords (typeof **String**): Returns the numbers in words e.g 325 should return three
+two five
+
+    ```JavaScript 
+    expect(typeof '12345'.numberWords()).toBe('string');
+    expect('12345'.numberWords()).toEqual('one two three four five');
+    expect('78'.numberWords()).toEqual('seven eight');
+    ```
+
+* isDigit (typeof **Boolean**): Returns true if the string is a digit(one number) e.g 3 should
+return true and 34 should return false. This method must implement Regular Expression .
+
+    ```JavaScript 
+    expect(typeof '12345'.isDigit()).toBe('string');
+    expect('12345'.isDigit()).toEqual(false);
+    expect('7'.isDigit()).toEqual(true);
+    ```
 
